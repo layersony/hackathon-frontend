@@ -21,8 +21,6 @@ function Hackathon(){
     return <HackathonCard key={item.id} hackathondt={item} />
   })
 
-  console.log(hackathons)
-
   return (
       <div>
         {hackathons}

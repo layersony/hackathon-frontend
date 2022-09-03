@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 function HackathonCard(props) {
   const hackathonObj = props.hackathondt
-  console.log(props)
   return (
     <Container className='blogCont d-flex justify-content-center align-items-center mt-2'>
       <img src={hackathonObj.image_url} alt="simple" />

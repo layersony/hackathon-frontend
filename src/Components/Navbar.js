@@ -11,6 +11,7 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/register/user">Register</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

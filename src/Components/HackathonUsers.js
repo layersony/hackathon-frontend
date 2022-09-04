@@ -1,14 +1,17 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
+import './styles/componentStyles.css'
 
 function HackathonUsers(props) {
   const hackathonUserObj = props.hackathonUserDt
   return (
-    <Container className='hackathonCont d-flex justify-content-start align-items-start mt-2'>
-      <div className=''>
-        <p>{hackathonUserObj ? hackathonUserObj.user_id :0} </p>
+    <div className='userlisting mt-1 d-flex justify-content-start'>
+      <img src="https://bit.ly/3qsOlwx" alt="userpic" />
+      <div className="userinfo ps-3">
+        <h4>{hackathonUserObj ? hackathonUserObj.user.fullname : ''} </h4>
+        <p>{hackathonUserObj ? hackathonUserObj.user.role : ''}</p>
+        <p>{hackathonUserObj ? hackathonUserObj.user.email : ''}</p>
       </div>
-    </Container>
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Button, InputGroup, Container, Row, Col } from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom'
+import './styles/componentStyles.css'
 
 function CreateEvent() {
   const [errors, setErrors] = useState([])

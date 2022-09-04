@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button, InputGroup, Container, Row, Col } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import './styles/componentStyles.css'
 
 function CreateUser(){
   const [errors, setErrors] = useState([])

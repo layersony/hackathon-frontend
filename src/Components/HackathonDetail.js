@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
 import HackathonUsers from './HackathonUsers'
+import './styles/componentStyles.css'
+
 
 function HackathonDetail() {
   const { id } = useParams()
@@ -36,9 +38,9 @@ function HackathonDetail() {
 
 
   return (
-    <Container className='p-2'>
+    <Container className='p-3 hackathondetail'>
       ID: {hackathonObject ? hackathonObject.uniq_id : '00000000'}
-      <div className='hackathonImage'>
+      <div className='hackathonImage bg-primary'>
         <img src={hackathonObject ? hackathonObject.image_url : "https://bamusholdings.com/images/joomlart/demo/default.jpg"} alt="" width={600} />
       </div>
       <div>

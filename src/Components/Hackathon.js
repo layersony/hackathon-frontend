@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 import HackathonCard from "./HackathonCard"
+import './styles/componentStyles.css'
+
 
 function Hackathon(){
   const base_url = "http://localhost:9292"
@@ -22,9 +25,11 @@ function Hackathon(){
   })
 
   return (
-      <div>
+    <Container>
+      <div className="row mt-5 mb-5">
         {hackathons}
       </div>
+    </Container>
   )
 
 }

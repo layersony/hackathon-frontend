@@ -8,6 +8,7 @@ import HackathonDetail from './Components/HackathonDetail';
 import CreateUser from './Components/CreateUser';
 import CreateEvent from './Components/CreateEvent';
 import Footer from './Components/Footer';
+import NotFound from './Components/NotFound'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/register/user" element={<CreateUser />} />
         <Route path="/hackathon/:id" element={<HackathonDetail />} />
         <Route exact path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </>

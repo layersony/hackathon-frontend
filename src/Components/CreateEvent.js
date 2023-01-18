@@ -22,7 +22,7 @@ function CreateEvent() {
   const { id } = useParams()
   // get hackathon data
   useEffect(() => {
-    const baseUrl = `http://localhost:9292/hackathon/${id}`
+    const baseUrl = `https://hackathonbackend.cybpact.com/hackathon/${id}`
     const fetchData = async () => {
       const data = await fetch(baseUrl)
       const json = await data.json()
@@ -36,7 +36,7 @@ function CreateEvent() {
   function handleSubmit(event) {
     event.preventDefault();
     
-    const baseUrl = `http://localhost:9292/book/event`
+    const baseUrl = `https://hackathonbackend.cybpact.com/book/event`
 
     if (formData.email.length > 0) {
       formData['hackathon_uniq_id'] = id

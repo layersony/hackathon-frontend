@@ -13,8 +13,8 @@ function HackathonDetail() {
   const [hackathonUserObject, sethackathonUserObject] = useState([])
 
   useEffect(() => {
-    const baseUrl = `http://localhost:9292/hackathon/${id}`
-    const usersUrl = `http://localhost:9292/hackathon/${id}/users`
+    const baseUrl = `https://hackathonbackend.cybpact.com/hackathon/${id}`
+    const usersUrl = `https://hackathonbackend.cybpact.com/hackathon/${id}/users`
 
     const fetchData = async () => {
       const data = await fetch(baseUrl)

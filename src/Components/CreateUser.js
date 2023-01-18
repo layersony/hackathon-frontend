@@ -29,7 +29,7 @@ function CreateUser(){
   // Submit form data
   function handleSubmit(event) {
     event.preventDefault();
-    const baseUrl = "http://localhost:9292/user"
+    const baseUrl = "https://hackathonbackend.cybpact.com/user"
 
     if (formData.email.length > 0) {
       const reqOption = {

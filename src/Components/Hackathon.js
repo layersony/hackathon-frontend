@@ -5,7 +5,7 @@ import './styles/componentStyles.css'
 
 
 function Hackathon(){
-  const base_url = "http://localhost:9292"
+  const base_url = "https://hackathonbackend.cybpact.com/"
 
   const [ hackathonList, setHackathonList ] = useState([]);
 

@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 #mainNav {
-  background-color: blue;
+  background-color: whitesmoke;
 }
-
 #mainNav .brand {
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+#mainNav .brand .brandOne {
+  color: green;
+  transform: rotate(20deg);
+}
+#mainNav .brand .brandtwo {
+  color: red;
+  transform: rotate(20deg);
 }
 
 .headerclass {
@@ -17,18 +24,15 @@
   background-blend-mode: darken;
   height: 500px;
 }
-
 .headerclass h1 {
   color: white;
   font-size: 3.3rem;
-  font-family: 'Short Stack', cursive;
+  font-family: "Short Stack", cursive;
 }
 
 .hackathonLanding .hackathonCard {
-  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
-          box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
 }
-
 .hackathonLanding .hackathonCard img {
   width: 100%;
   height: 200px;
@@ -37,27 +41,34 @@
   position: center center;
 }
 
+.hackathonImage {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.hackathonImage img {
+  border-radius: 2%;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
 .userlisting {
   padding: 4px;
   border-radius: 5px;
   border-bottom: 1px solid black;
   width: 300px;
 }
-
 .userlisting img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 .userlisting h4 {
   margin: 0;
   font-weight: 600px;
 }
-
 .userlisting p {
   margin: 0;
   font-weight: 400;
   font-size: 13px;
-}
-/*# sourceMappingURL=componentStyles.css.map */
+}/*# sourceMappingURL=componentStyles.css.map */

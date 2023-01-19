@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
 #mainNav{
-  background-color: blue;
+  background-color: whitesmoke;
   .brand{
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    .brandOne{
+      color: green;
+      transform: rotate(20deg);
+    }
+    .brandtwo{
+      color: red;
+      transform: rotate(20deg);
+    }
   }
 }
 
@@ -33,6 +41,17 @@
       object-fit: cover;
       position: center center;
     }
+  }
+}
+
+.hackathonImage{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  img{
+    border-radius: 2%;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;  
   }
 }
 

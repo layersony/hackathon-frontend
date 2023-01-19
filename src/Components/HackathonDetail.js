@@ -40,20 +40,21 @@ function HackathonDetail() {
   return (
     <Container className='p-3 hackathondetail'>
       ID: {hackathonObject ? hackathonObject.uniq_id : '00000000'}
-      <div className='hackathonImage bg-primary'>
+      <div className='hackathonImage'>
         <img src={hackathonObject ? hackathonObject.image_url : "https://bamusholdings.com/images/joomlart/demo/default.jpg"} alt="" width={600} />
       </div>
       <div>
         <h3 className="mt-3">{hackathonObject ? hackathonObject.topic : "Loading..."}</h3>
         <Link to={`/hackathon/book/${hackathonObject ? hackathonObject.uniq_id : 0}`}><Button variant='outline-secondary' size='sm'>Register Event</Button>{' '}</Link>
-        <div className='d-flex justify-content-left align-items-center mt-4 mb-4'>
-          <span>Date and Time: {hackathonObject ? hackathonObject.datetime : "To be Set"}</span>
-          <span className="ms-3">location: - {hackathonObject ? hackathonObject.location : "To be Communicated"} </span>
+        <div className='d-flex justify-content-left align-items-left flex-column bmt-4 mb-4 mt-3'>
+          <span><b>Date and Time :</b> {hackathonObject ? hackathonObject.datetime : "To be Set"}</span>
+          <span className="mt-1"><b>Location :</b> - {hackathonObject ? hackathonObject.location : "To be Communicated"} </span>
         </div>
+        <h4><u>Description</u></h4>
         <p>{hackathonObject ? hackathonObject.description : "loading..."}</p>
       </div>
-      <div>
-        <h2>Participating users</h2>
+      <div className='mt-2 mb-2'>
+        <h3><u>Participating users</u></h3>
         <div className="partUsers">
           { hackathonUsers }
         </div>
